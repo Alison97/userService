@@ -1,13 +1,12 @@
-package com.microUsersApp.microUsers.user.domain.api;
+package com.microUsersApp.microUsers.user.domain.spi;
 
 import com.microUsersApp.microUsers.user.domain.model.Role;
 
 import java.util.List;
 
-public interface IRoleServicePort {
-
+public interface IRolePersistencePort {
     void saveRole(Role role);
-    Role getRole(Long roleId);
+    Role getRoles(Long roleId);
     List<Role> getAllRoles();
     void updateRole(Role role);
     void deleteRole(Long roleId);
